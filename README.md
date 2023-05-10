@@ -1,2 +1,2 @@
 # Vue-Sandbox
-test
+I want to play with Vue.js.
