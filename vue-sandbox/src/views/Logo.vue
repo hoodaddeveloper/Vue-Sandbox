@@ -1,5 +1,8 @@
 <template>
-  <a>Hello</a>
+  <div class="logo">
+    <a>Hello</a>
+    {{ name + " " + creator }}
+  </div>
 </template>
 
 <script>
@@ -9,13 +12,14 @@ export default {
   data() {
     return {
       name: "My first vue sandbox project",
-      creator: "HoodadDeveloper"
-    }
-  }
-}
+      creator: "HoodadDeveloper",
+    };
+  },
+};
 </script>
 
-<style scoped> /* Only for this cpmponent */
+<style scoped>
+/* Only for this cpmponent */
 /* CSS codes */
 a {
   background-color: tomato;
