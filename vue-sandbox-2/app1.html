@@ -16,9 +16,20 @@
 </head>
 
 <body>
+  <div id="app">
+    <h1>Product goes here</h1>
+  </div>
 
   <!-- Import JS -->
-  <script src="main.js"></script>
+  <script>
+    let app = Vue.createApp({
+      data() {
+        return {
+          product: "Sucks"
+        }
+      }
+    })
+  </script>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
