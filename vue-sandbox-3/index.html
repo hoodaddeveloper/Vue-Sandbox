@@ -17,7 +17,7 @@
     <div class="product-display">
       <div class="product-container">
         <div class="product-image">
-          <!-- image goes here -->
+          <!-- Image goes here -->
         </div>
         <div class="product-info">
           <h1>{{ product }}</h1>
@@ -27,7 +27,15 @@
   </div>
 
   <!-- Import App -->
-  <script src="./main.js"></script>
+  <script>
+    const app = Vue.createApp({
+    data() {
+        return {
+            product: 'Socks'
+        }
+    }
+})
+  </script>
 
   <!-- Mount App -->
   <script>
