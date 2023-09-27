@@ -18,6 +18,7 @@
       <div class="product-container">
         <div class="product-image">
           <!-- Image goes here -->
+          <img v-bind:src="image">
         </div>
         <div class="product-info">
           <h1>{{ product }}</h1>
@@ -31,7 +32,9 @@
     const app = Vue.createApp({
       data() {
         return {
-          product: 'Socks'
+          product: 'Socks',
+          image: "images/socks_green.jpg",
+          /* image: "images/socks_blue.jpg" */
         }
       }
     })
