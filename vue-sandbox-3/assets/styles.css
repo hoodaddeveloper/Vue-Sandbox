@@ -27,9 +27,9 @@ body {
   padding: 10px 30px;
   background-color: white;
   border: 1px solid #d8d8d8;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
 .color-circle {
@@ -59,9 +59,9 @@ img {
   margin: 40px;
   padding: 15px;
   border: 2px solid #d8d8d8;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
 input {
@@ -104,8 +104,8 @@ p {
 
 .product-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .product-image,
@@ -114,27 +114,27 @@ p {
 }
 
 .review-form {
-  display: flex;
-  flex-direction: column;
   width: 425px;
-  padding: 20px;
   margin: 40px;
-  border: 2px solid #d8d8d8;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  border: 2px solid #d8d8d8;
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
 .review-container {
   width: 425px;
   padding: 20px;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
   margin-left: 40px;
+  background-color: white;
   border: 2px solid #d8d8d8;
+  box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
 }
 
 .review-container li {
@@ -149,8 +149,8 @@ p {
 select {
   height: 40px;
   font-size: 20px;
-  background-color: white;
   cursor: pointer;
+  background-color: white;
 }
 
 textarea {
@@ -172,8 +172,8 @@ ul {
 
   .product-image,
   .product-info {
-    margin-left: 10px;
     width: 100%;
+    margin-left: 10px;
   }
 
   .review-form {
