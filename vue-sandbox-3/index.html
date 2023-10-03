@@ -52,7 +52,6 @@
           product: 'Socks',
           brand: "Hoodad's",
           selectedVariant: 0,
-          inventory: 12,
           details: ["50% Cotton", "30% Wool", "20% Polyester"],
           variants: [
             { id: 2234, color: "green", image: "images/socks_green.jpg", quantity: 50 },
@@ -67,13 +66,19 @@
         removeFromCart() {
           this.cart -= 1
         },
-        updateImage(variantImage) {
-          this.image = variantImage
+        updateVariant(index) {
+          this.selectedVariant = index
         }
       },
       computed: {
         title() {
           return this.brand + " " + this.product
+        },
+        image() {
+          return this.variants[this.selectedVariant].image
+        },
+        inventory() {
+          return this.variants[this.selectedVariant].quantity
         }
       }
     })
