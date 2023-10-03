@@ -34,8 +34,10 @@
             class="color-circle" :style="{ backgroundColor: variant.color }">
           </div>
           <!-- Add to Cart Button -->
-          <button class="button" :disabled="!inventory" :class="{disabledButton: !inventory}" v-on:click="addToCart">Add to Cart</button>
-          <button class="button" :disabled="!inventory" :class="{disabledButton: !inventory}" v-on:click="removeFromCart">Remove</button>
+          <button class="button" :disabled="!inventory" :class="{disabledButton: !inventory}" v-on:click="addToCart">Add
+            to Cart</button>
+          <button class="button" :disabled="!inventory" :class="{disabledButton: !inventory}"
+            v-on:click="removeFromCart">Remove</button>
         </div>
       </div>
     </div>
