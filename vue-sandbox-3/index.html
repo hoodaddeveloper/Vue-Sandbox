@@ -23,7 +23,7 @@
           <img v-bind:src="image">
         </div>
         <div class="product-info">
-          <h1>{{ product }}</h1>
+          <h1>{{ title }}</h1>
           <p v-if="inventory >= 10">In Stock</p>
           <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
           <p v-else>Out of Stock</p>
@@ -50,8 +50,9 @@
         return {
           cart: 0,
           product: 'Socks',
+          brand: "Hoodad's",
           image: "images/socks_green.jpg",
-          inventory: 0,
+          inventory: 12,
           details: ["50% Cotton", "30% Wool", "20% Polyester"],
           variants: [
             { id: 2234, color: "green", image: "images/socks_green.jpg" },
@@ -70,6 +71,11 @@
           this.image = variantImage
         }
       },
+      computed: {
+        title() {
+          return this.brand + " " + this.product
+        }
+      }
     })
   </script>
 
