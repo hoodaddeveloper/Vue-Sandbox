@@ -15,9 +15,7 @@
     <div class="nav-bar"></div>
     <!-- Cart -->
     <div class="cart">Cart ({{ cart }})</div>
-    <product-display></product-display>
-    <product-display></product-display>
-    <product-display></product-display>
+    <product-display :premium="premium" @add-to-cart="addCart" @remove-from-cart="removeCart"></product-display>
   </div>
 
   <!-- Import App -->
@@ -26,9 +24,17 @@
       data() {
         return {
           cart: 0,
+          premium: false
         }
       },
-      methods: {}
+      methods: {
+        addCart() {
+          this.cart += 1
+        },
+        removeCart() {
+          this.cart -= 1
+        }
+      }
     })
   </script>
 
