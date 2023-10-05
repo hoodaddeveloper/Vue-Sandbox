@@ -14,17 +14,27 @@
   <!-- Import Vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- CSS Styles -->
+  <style>
+    #app {
+      margin: 20px;
+      padding: 10px;
+      font-size: x-large;
+      display:inline-block;
+      background-color: lightgreen;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div id="app"></div>
+  <div id="app">{{ message }}</div>
 
   <script>
     const app = Vue.createApp({
       data() {
         return {
-          message: "Hello World!"
+          message: "Hello Hoodad!"
         }
       }
     })
