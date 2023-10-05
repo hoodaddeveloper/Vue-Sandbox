@@ -17,10 +17,7 @@
   <!-- CSS Styles -->
   <style>
     #app {
-      margin: 20px;
-      padding: 10px;
       font-size: x-large;
-      display:inline-block;
       background-color: lightgreen;
     }
   </style>
@@ -28,13 +25,16 @@
 
 <body>
 
-  <div id="app">{{ message }}</div>
+  <div class="text-center mt-5">
+    <span class="p-3 rounded" id="app">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
+  </div>
+
 
   <script>
     const app = Vue.createApp({
       data() {
         return {
-          message: "Hello Hoodad!"
+          message: "Random Number:"
         }
       }
     })
