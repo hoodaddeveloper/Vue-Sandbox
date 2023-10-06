@@ -13,22 +13,13 @@
 
   <!-- Import Vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-  <!-- CSS Styles -->
-  <style>
-    #app {
-      font-size: x-large;
-      background-color: lightgreen;
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="text-center mt-5">
-    <span class="p-3 rounded" id="app">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
+    <span class="p-3 rounded fs-4 bg-info" id="app">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
   </div>
-
 
   <script>
     const app = Vue.createApp({
