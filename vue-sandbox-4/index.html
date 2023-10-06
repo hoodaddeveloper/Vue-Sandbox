@@ -16,11 +16,11 @@
 </head>
 
 <body>
-
   <div class="text-center mt-5">
     <span class="p-3 rounded fs-4 bg-info" id="app">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
   </div>
 
+  <!-- Import App -->
   <script>
     const app = Vue.createApp({
       data() {
@@ -30,6 +30,7 @@
       }
     })
 
+    /* Mount App */
     app.mount('#app')
   </script>
 
