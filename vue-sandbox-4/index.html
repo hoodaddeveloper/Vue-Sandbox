@@ -13,16 +13,30 @@
 
   <!-- Import Vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- CSS Styles -->
+  <style>
+    #app2 {
+      margin: 10px;
+      padding: 10px;
+      display: inline-block;
+      border: solid black 1px;
+    }
+
+    .pinkBG {
+      background-color: lightpink;
+    }
+  </style>
 </head>
 
 <body>
   <div class="text-center mt-5">
-    <span class="p-3 rounded fs-4 bg-info" id="app">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
+    <span class="p-3 rounded fs-4 bg-info" id="app1">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
   </div>
 
-  <!-- Import App -->
+  <!-- Import App1 -->
   <script>
-    const app = Vue.createApp({
+    const app1 = Vue.createApp({
       data() {
         return {
           message: "Random Number:"
@@ -30,8 +44,32 @@
       }
     })
 
-    /* Mount App */
-    app.mount('#app')
+    /* Mount App1 */
+    app1.mount('#app1')
+  </script>
+
+  <h1>'v-bind' Example</h1>
+  <p>The browser finds the class name inside the Vue instance.</p>
+
+  <div id="app2">
+    <p>Everything inside the div emelent with id="app" can use data from the Vue instance.</p>
+    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Import App2 -->
+  <script>
+    const app2 = Vue.createApp({
+      data() {
+        return {
+          vueClass: "pinkBG"
+        }
+      }
+    })
+
+    /* Mount App2 */
+    app2.mount('#app2')
   </script>
 
   <!-- Bootstrap JavaScript Libraries -->
