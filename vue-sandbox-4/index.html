@@ -22,38 +22,43 @@
       display: inline-block;
       border: solid black 1px;
     }
+    
+    h1 {
+      margin-top: 40px !important;
+    }
 
     .pinkBG {
       background-color: lightpink;
     }
+
   </style>
 </head>
 
 <body>
   <div class="text-center mt-5">
     <span class="p-3 rounded fs-4 bg-info" id="app1">{{ message + " " + Math.ceil(Math.random()*6) }}</span>
-  </div>
 
-  <!-- Import App1 -->
-  <script>
-    const app1 = Vue.createApp({
-      data() {
-        return {
-          message: "Random Number:"
+    <!-- Import App1 -->
+    <script>
+      const app1 = Vue.createApp({
+        data() {
+          return {
+            message: "Random Number:"
+          }
         }
-      }
-    })
+      })
 
-    /* Mount App1 */
-    app1.mount('#app1')
-  </script>
+      /* Mount App1 */
+      app1.mount('#app1')
+    </script>
 
-  <h1>'v-bind' Example</h1>
-  <p>The browser finds the class name inside the Vue instance.</p>
+    <h1>'v-bind' Example</h1>
+    <p>The browser finds the class name inside the Vue instance.</p>
 
-  <div id="app2">
-    <p>Everything inside the div emelent with id="app" can use data from the Vue instance.</p>
-    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+    <div id="app2">
+      <p>Everything inside the div emelent with id="app" can use data from the Vue instance.</p>
+      <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+    </div>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
