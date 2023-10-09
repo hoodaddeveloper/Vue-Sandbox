@@ -30,6 +30,14 @@
     .pinkBG {
       background-color: lightpink;
     }
+
+    #app3 {
+      border: dashed black 1px;
+      width: 130px;
+      padding-left: 20px;
+      font-weight: bold;
+      background-color: lightgreen;
+    }
   </style>
 </head>
 
@@ -51,6 +59,7 @@
       app1.mount('#app1')
     </script>
 
+    <!-- ////////////////////////////////////////// -->
     <h1>'v-bind' Example</h1>
     <p>The browser finds the class name inside the Vue instance.</p>
 
@@ -58,22 +67,49 @@
       <p>Everything inside the div emelent with id="app" can use data from the Vue instance.</p>
       <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
     </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Import App2 -->
+    <script>
+      const app2 = Vue.createApp({
+        data() {
+          return {
+            vueClass: "pinkBG"
+          }
+        }
+      })
+
+      /* Mount App2 */
+      app2.mount('#app2')
+    </script>
+
+    <!-- ////////////////////////////////////////// -->
+    <h1>Example with 'v-if' and 'v-else'</h1>
+
+    <p>Try changing the 'typewritersInStock' value in the Vue instance from 'true' to 'false' and run the code again.
+    </p>
+
+    <div id="app3 mx-auto">
+      <p v-if="typewritersInStock">
+        in stock
+      </p>
+      <p v-else>
+        not in stock
+      </p>
+    </div>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-  <!-- Import App2 -->
   <script>
-    const app2 = Vue.createApp({
+    const app3 = Vue.createApp({
       data() {
         return {
-          vueClass: "pinkBG"
+          typewritersInStock: true
         }
       }
     })
-
-    /* Mount App2 */
-    app2.mount('#app2')
+    app3.mount('#app3')
   </script>
 
   <!-- Bootstrap JavaScript Libraries -->
