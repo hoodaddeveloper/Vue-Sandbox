@@ -56,10 +56,10 @@
       <input type="text" value="username" placeholder="Username" v-model="username" />
       <label for="bio">Bio</label>
       <textarea value="bio" placeholder="Bio" v-model="bio"></textarea>
-      <label for="tweet">New Tweet</label>
+      <label for="tweet" v-bind="newTweet">New Tweet</label>
       <div class="new-tweet">
-        <input type="text" value="tweet" placeholder="New Tweet" />
-        <button>Add Tweet</button>
+        <input type="text" value="tweet" placeholder="New Tweet" v-model="newTweet" />
+        <button v-on:click="tweets.push(newTweet)">Add Tweet</button>
       </div>
     </div>
   </div>
