@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="tweets">
-      <div class="tweet" v-for="tweet in tweets">
+      <div class="tweet" v-for="tweet in tweets" v-bind:message="tweet" v-bind:author="username">
         <h3>{{ username }}</h3>
         <p>{{ tweet }}!</p>
       </div>
