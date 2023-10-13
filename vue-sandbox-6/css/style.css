@@ -1,8 +1,8 @@
 /* Site-Wide Styles */
 html {
   font-size: 14px;
-  font-family: 'Oxygen', sans-serif;
   background-color: #f9f9f9;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /* Header */
@@ -19,24 +19,24 @@ header {
 
 h1 {
   flex: 1;
-  font-family: 'Arial', sans-serif;
-  font-size: 1.43rem;
   font-weight: 900;
+  font-size: 1.43rem;
   letter-spacing: 0.3px;
+  font-family: 'Arial', sans-serif;
 }
 
 .time {
-  padding-right: 4.29rem;
-  font-size: 1.28rem;
   font-weight: bold;
+  font-size: 1.28rem;
+  padding-right: 4.29rem;
 }
 
 /* Form Elements */
 
 form {
   display: flex;
-  flex-direction: column;
   padding: 1.86rem 20%;
+  flex-direction: column;
 }
 
 input,
@@ -44,8 +44,8 @@ textarea,
 select {
   padding: .71rem;
   margin-right: 1.21rem;
-  background-color: #ffffff;
   border: solid 1px #979797;
+  background-color: #ffffff;
 }
 
 textarea {
@@ -57,14 +57,14 @@ select {
   -moz-appearance: none;
   -webkit-border-radius: 0px;
   background-image: url("https://content.codecademy.com/courses/vue-instances/triangle.svg");
-  background-position: 97% 50%;
-  background-repeat: no-repeat;
   background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
 }
 
 label {
-  margin-bottom: .71rem;
   font-weight: bold;
+  margin-bottom: .71rem;
 }
 
 legend {
