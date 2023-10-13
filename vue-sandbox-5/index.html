@@ -39,15 +39,7 @@
     <div class="tweets">
       <div class="tweet" v-for="tweet in tweets" v-bind:message="tweet" v-bind:author="username">
         <h3>{{ username }}</h3>
-        <p>{{ tweet }}!</p>
-      </div>
-      <div class="tweet">
-        <h3>{{ username }}</h3>
-        <p>{{ tweets[0] }}</p>
-      </div>
-      <div class="tweet">
-        <h3>{{ username }}</h3>
-        <p>{{ tweets[1] }}</p>
+        <p>{{ tweet }}</p>
       </div>
     </div>
     <div class="settings">

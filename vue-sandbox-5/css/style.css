@@ -1,10 +1,10 @@
 body {
-  padding-bottom: 4rem;
-  background-image: linear-gradient(to left, #f0f6ff, #dddbf4);
-  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 2rem;
+  padding-bottom: 4rem;
   letter-spacing: 0.6px;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to left, #f0f6ff, #dddbf4);
 }
 
 em {
@@ -16,21 +16,21 @@ em {
 }
 
 .image-container img {
-  max-width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 h1 {
   padding: .75rem;
-  background-color: #5919d9;
-  text-align: center;
   font-size: 2rem;
   font-weight: 900;
-  font-stretch: condensed;
-  line-height: 0.87;
-  letter-spacing: 1.1px;
   color: #ffffff;
+  line-height: 0.87;
+  text-align: center;
+  letter-spacing: 1.1px;
+  font-stretch: condensed;
+  background-color: #5919d9;
 }
 
 .user {
@@ -47,20 +47,20 @@ h1 {
 .user-information .image-container {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   margin-right: 2rem;
+  border-radius: 50px;
 }
 
 .user-information h3 {
-  font-size: 1.125rem;
   font-weight: bold;
+  font-size: 1.125rem;
 }
 
 .tweet {
-  background-color: #ffffff;
   padding: 1.5rem;
-  margin-bottom: 2px;
   font-size: .875rem;
+  margin-bottom: 2px;
+  background-color: #ffffff;
 }
 
 .tweet h3 {
@@ -69,20 +69,20 @@ h1 {
 
 .settings {
   display: flex;
-  flex-direction: column;
   padding: 1.5rem;
   font-size: .875rem;
+  flex-direction: column;
 }
 
 .settings h2 {
-  padding-bottom: 1.1875rem;
   font-weight: bold;
   line-height: 1.64;
+  padding-bottom: 1.1875rem;
 }
 
 .settings label {
-  font-weight: bold;
   font-size: .75rem;
+  font-weight: bold;
 }
 
 .settings input,
@@ -108,16 +108,16 @@ h1 {
 
 .new-tweet input {
   flex-grow: 1;
-  margin-right: 2rem;
   margin-bottom: 0;
+  margin-right: 2rem;
 }
 
 .new-tweet button {
   cursor: pointer;
-  border-radius: 2px;
-  background-color: #5919d973;
   color: #ffffff;
   transition: .25s;
+  border-radius: 2px;
+  background-color: #5919d973;
 }
 
 .new-tweet button:hover {
