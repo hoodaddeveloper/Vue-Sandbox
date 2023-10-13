@@ -79,11 +79,11 @@ time,
 mark,
 audio,
 video {
+  border: 0;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -125,6 +125,6 @@ q:after {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
