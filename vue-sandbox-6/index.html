@@ -35,7 +35,7 @@
     <form>
       <div class="form-row">
         <div class="form-field">
-          <label for="first-name">Name</label>
+          <label for="first-name">First Name</label>
           <input type="text" id="first-name" />
         </div>
         <div class="form-field">
@@ -89,14 +89,14 @@
         </fieldset>
       </div>
       <div class="form-row vertical">
-        <label for="requests">Special Requests</label>
+        <label for="requests">Special requests</label>
         <textarea id="requests"></textarea>
       </div>
       <div class="form-row vertical agreement checkbox">
         <fieldset>
           <legend>Purchase Agreement</legend>
-          <p>I, First Last, wish to buy Quantity Type tickets. I understand that all ticket sales are final.</p>
-          <input type="checkbox" name="agreement" id="agree">
+          <p>I, {{ fullName }}, wish to buy {{ ticketDescription }}. I understand that all ticket sales are final.</p>
+          <input type="checkbox" name="agreement" id="agree" />
           <label for="agree">I Agree</label>
         </fieldset>
       </div>
