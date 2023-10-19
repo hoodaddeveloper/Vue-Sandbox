@@ -1,7 +1,13 @@
 /* Create App */
 const app = Vue.createApp({
   // data, function
-  template: "<h2>This is a test Text</h2>"
+  data() {
+    return {
+      title: "Marefate Nafs",
+      author: "Allameh Hassanzadeh Amoli",
+      nationality: "Iranian"
+    }
+  }
 })
 
 /* Mount App */
