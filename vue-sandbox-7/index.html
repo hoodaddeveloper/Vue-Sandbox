@@ -13,15 +13,16 @@
 
   <!-- Import Vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-  <!-- CSS Styles -->
-  <style>
-  </style>
 </head>
 
 <body>
   <div id="app">
-    <p class="m-3">This book is {{ title }} and the author is {{ author }}. He was an {{ nationality }} professor.</p>
+    <p class="m-3">This book is {{ title }} and the author is {{ author }}.
+      He was an {{ nationality }} professor. I give {{ stars }} stars to this book.</p>
+    <!-- Buttons -->
+    <button class="btn btn-primary mx-3" @click="stars++">Increase</button>
+    <button class="btn btn-secondary me-3" @click="stars--">Decrease</button>
+    <button class="btn btn-success" @click="changeTitle('Elahi Nameh')">Change Title</button>
   </div>
 
   <!-- Import App -->

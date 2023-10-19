@@ -5,7 +5,13 @@ const app = Vue.createApp({
     return {
       title: "Marefate Nafs",
       author: "Allameh Hassanzadeh Amoli",
-      nationality: "Iranian"
+      nationality: "Iranian",
+      stars: 5
+    }
+  },
+  methods: {
+    changeTitle(title) {
+      this.title = title
     }
   }
 })
