@@ -3,6 +3,7 @@ const app = Vue.createApp({
   // data, function
   data() {
     return {
+      showBook: true,
       title: "Marefate Nafs",
       author: "Allameh Hassanzadeh Amoli",
       nationality: "Iranian",
