@@ -20,28 +20,25 @@
     <div v-if="showBook">
       <p>This book's name is {{ title }} and the author is {{ author }}.<br>
         He was an {{ nationality }} professor. I give {{ stars }} stars to this book.</p>
+        .
       <!-- Buttons -->
       <button class="btn btn-primary me-3" @click="stars++">Increase</button>
       <button class="btn btn-secondary me-3" @click="stars--">Decrease</button>
       <button class="btn btn-success" @click="changeTitle('Elahi Nameh')">Change Title</button>
-      <button class="btn btn-warning ms-3" @click="hideBook">
-        <span>Hide Book</span>
-        <span>Show Book</span>
-      </button>
+      <button class="btn btn-warning ms-3" @click="hideBook">Hide Book</button>
     </div>
-  </div>
 
-  <!-- Import App -->
-  <script src="app.js"></script>
+    <!-- Import App -->
+    <script src="app.js"></script>
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+      </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+      </script>
 </body>
 
 </html>
