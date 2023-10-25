@@ -13,6 +13,9 @@ const app = Vue.createApp({
   methods: {
     changeTitle(title) {
       this.title = title
+    },
+    hideBook(hide) {
+      this.title = hide
     }
   }
 })
