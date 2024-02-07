@@ -1,7 +1,8 @@
 Vue.createApp({
   data() {
     return {
-      firstName: "Hoodad"
+      firstName: "Hoodad",
+      lastName: "Wesker"
     }
   }
 }).mount("#app")
