@@ -8,5 +8,5 @@ const vm = Vue.createApp({
 }).mount("#app")
 
 setTimeout(() => {
-  vm.firstName = "Ali"
+  vm.firstName = "Ali".toUpperCase()
 }, 2000);
