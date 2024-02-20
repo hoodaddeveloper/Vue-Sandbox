@@ -19,12 +19,15 @@
     <input type="text" v-model="firstName">
 
     <label for="">Last Name</label>
-    <input type="text" v-model="lastName">
+    <input type="text" :value="lastName" @input="updateLastName">
+    <button type="button" @click="age++">Increment</button>
+    <button type="button" @click="decrement">Decrement</button>
   </div>
 
   <!-- Vue CDN -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- JS Codes -->
   <script>
     const vm = Vue.createApp({
       data() {
@@ -40,6 +43,12 @@
       methods: {
         fullName() {
           return `${this.firstName} ${this.lastName.toUpperCase()}`
+        },
+        decrement() {
+          this.age--
+        },
+        updateLastName(event) {
+          this.lastName = event.target.value
         }
       },
     }).mount("#app")
