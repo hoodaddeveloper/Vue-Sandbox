@@ -11,6 +11,7 @@
     <p>{{ fullName() }}</p>
     <p><a :href="url" target="_blank">Google</a></p>
     <p v-html="raw_url"></p>
+    <p>{{ age }}</p>
 
     <hr>
 
@@ -23,7 +24,31 @@
 
   <!-- Vue CDN -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="app.js"></script>
+
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          firstName: "Hoodad",
+          lastName: "Wesker",
+          url: "https://google.com",
+          raw_url: '<a href="https://google.com" target="_blank">Google</a>',
+          age: 29
+        }
+      },
+      /* Return the full name */
+      methods: {
+        fullName() {
+          return `${this.firstName} ${this.lastName.toUpperCase()}`
+        }
+      },
+    }).mount("#app")
+
+    /* Set Timeout */
+    /* setTimeout(() => {
+      vm.firstName = "Ali".toUpperCase()
+    }, 2000); */
+  </script>
 </body>
 
 </html>
