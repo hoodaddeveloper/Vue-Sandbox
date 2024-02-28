@@ -22,7 +22,7 @@
 
 <body>
   <div id="app" v-cloak>
-    <p>{{ fullName() }}</p>
+    <p>{{ fullName }}</p>
     <p><a :href="url" target="_blank">Google</a></p>
     <p v-html="raw_url"></p>
     <p>{{ age }}</p>
@@ -63,9 +63,6 @@
       },
       /* Return the full name */
       methods: {
-        fullName() {
-          return `${this.firstName} ${this.middleName} ${this.lastName.toUpperCase()}`
-        },
         decrement() {
           this.age--
         },
@@ -76,6 +73,12 @@
           this.middleName = event.target.value
         }
       },
+      computed: {
+        fullName() {
+          console.log("Full name computed property was called!")
+          return `${this.firstName} ${this.middleName} ${this.lastName.toUpperCase()}`
+        }
+      }
     }).mount("#app")
 
     /* Set Timeout */
